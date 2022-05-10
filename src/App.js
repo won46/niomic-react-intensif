@@ -15,8 +15,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Halo Iwan 
-        </a>
+          Halo Iwan react
+        </a> 
       </header>
     </div>
   );
