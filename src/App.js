@@ -1,23 +1,9 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import MenuKontak from "./components/MenuKontak";
 import MenuProduct from "./components/MenuProduct";
 import MenuTentangKami from "./components/MenuTentangKami";
 import MenuUtama from "./components/MenuUtama";
-
-const Header = () => {
-  return (
-    <div>
-      <h1>Ini Halaman Untuk Header</h1>
-    </div>
-  );
-}
-
-const Footer = () => {  
-  return (
-    <div>
-      <h1>Ini Halaman Untuk Footer</h1>
-    </div>
-  );
-}
 
 function App() {
   return (
