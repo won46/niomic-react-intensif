@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Halo Iwan react 2
+          Halo Iwan react 21
         </a> 
       </header>
     </div>
