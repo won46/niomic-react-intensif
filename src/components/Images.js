@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
-class Images extends Component {
+export class Images extends Component {
+
   render() {
     return (
-      <img src={this.props.linkgambar}
-      alt={this.props.alt}
-      width={this.props.lebar}
-      />
+        <img src={this.props.linkgambar}
+        alt={this.props.alt}
+        width={this.props.lebar}
+        />
     )
   }
 }
