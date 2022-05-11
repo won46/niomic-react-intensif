@@ -1,13 +1,20 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import MenuKontak from "./components/MenuKontak";
+import MenuMakanan from "./components/MenuMakanan";
+import MenuUtama from "./components/MenuUtama";
+import TentangKami from "./components/TentangKami";
 
 
 function App() {
   return (
     <div >
-    <h1>Tugas 1 React JS</h1>
     <Header />
-    <Footer />
+    <MenuUtama />
+    <MenuMakanan />
+    <TentangKami />
+    <MenuKontak />
+    <Footer list="3 terbaik" />
     </div>
   );
 }

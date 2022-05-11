@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Header = () => {
-    var name ="header dari var"
   return (
-    <div>Ini {name}</div>
+    <div>
+        <h3>Home | Product | Kontak | Tentang Kami</h3>
+    </div>
   )
 }
 
