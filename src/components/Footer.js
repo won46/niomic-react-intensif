@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
+import TopEvents from '../events/TopEvents'
 
-const Footer = () => {
-  return (
-    <div>Tugas 2 React js</div>
-  )
+export class Footer extends Component {
+  render() {
+    return (
+      <div>
+        <TopEvents />
+        <h3>Tugas 3 React JS </h3>
+      </div>
+    )
+  }
 }
 
 export default Footer
