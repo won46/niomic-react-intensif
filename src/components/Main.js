@@ -7,7 +7,8 @@ export class Main extends Component {
       this.state = {
          title: "Menu Makanan",
          title2:"Menu Minuman",
-         inputValue: "Nasi Padang Nusantara"
+         inputValue: "",
+         inputKota: "",
       }
       this.rubahData = this.rubahData.bind(this)
       this.handleChange = this.handleChange.bind(this)
@@ -27,16 +28,18 @@ export class Main extends Component {
         })
     }
 
-    handleChange(e) {
-        console.log(e.target.value);
+    handleChange(value,e) {
+        this.setState({ [value]: e.target.value})
     }
   render() {
+      console.log("jalan  : render")
     return (
       <div>
           <h3>{this.state.title}</h3>
           <h3>{this.state.title2}</h3>
           <button onClick={this.rubahData}>Rubah Data</button>
-          <input type="text" value={this.state.inputValue} onChange={this.handleChange}/>
+          <input type="text" value={this.state.inputValue} placeholder="nama" onChange={e => this.handleChange("inputValue",e) }/>
+          <input type="text" value={this.state.inputKota} placeholder="kota" onChange={e => this.handleChange("inputKota",e)}/>
       </div>
     )
   }

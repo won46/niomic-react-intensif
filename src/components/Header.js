@@ -7,6 +7,7 @@ export class Header extends Component {
       
         this.state = {
            daftar:"daftar makanan nusantara",
+           statusRendering: true,
         }
         this.handlePesan = this.handlePesan.bind(this);
       }
@@ -16,12 +17,35 @@ export class Header extends Component {
       }
   render() {
     return (
-        <div>
-        <h3>Makanan Khas Indonesia</h3>
-        <p>{this.state.daftar} </p>
-        <a href='/' onClick={this.handlePesan} >  Halaman Header</a>
-    </div>
+      <div>
+         {this.state.statusRendering === true ? 
+         (
+         <div>
+         <h1>Selamat Datang</h1>
+         <h2>Silahkan Pilih Makanan</h2>
+         </div>
+         ) : (
+          <div>
+           <h1>Selamat Tinggal</h1>
+           <h2>Jangan Lupa Datang Kembali</h2>
+         </div>
+         )}
+      </div>
     )
+  
+      
+    
+  
+
+
+
+    // return (
+    //     <div>
+    //     <h3>Makanan Khas Indonesia</h3>
+    //     <p>{this.state.daftar} </p>
+    //     <a href='/' onClick={this.handlePesan} >  Halaman Header</a>
+    // </div>
+    // )
   }
 }
 
